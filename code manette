@@ -1,0 +1,18 @@
+#include <SoftwareSerial.h>;
+// Déclaration des pins
+const int buttonPin = 2;  
+int buttonState = 0;
+// Déclaration de SoftwareSerial sur des pins 10 et 11
+SoftwareSerial BTSerial(7, 6); // RX, TX
+void setup() {
+  pinMode(buttonPin, INPUT);
+  BTSerial.begin(9600);  // Initialiser la communication série avec le module HC-05
+}
+void loop() {
+  buttonState = digitalRead(buttonPin);  // Lire l&#39;état du bouton
+ 
+  if (buttonState == HIGH) {
+    BTSerial.println(&quot;CAM_ON&quot;);  // Envoyer la commande via Bluetooth
+    delay(500);  // Anti-rebond pour éviter les envois multiples
+  }
+}
