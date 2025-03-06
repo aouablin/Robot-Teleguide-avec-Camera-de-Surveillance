@@ -25,7 +25,8 @@ Le robot est équipé d'une **caméra OV7670** permettant la surveillance en tem
 - Caméra OV7670  
 - Câbles de connexion et Breadboard
 
-![image](https://github.com/user-attachments/assets/bc8d810d-dd9d-4494-a625-2ce096425c78)
+![image](https://github.com/user-attachments/assets/631d3595-e2e7-4b3d-ae6c-dd2c6b736c64)
+
 
   
 
